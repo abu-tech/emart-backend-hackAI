@@ -4,7 +4,6 @@ const { Schema } = mongoose
 const subscriptionSchema = new Schema({
     user: {
         type: mongoose.Schema.Types.ObjectId,
-        required: true,
         ref: 'User'
     },
     product: {
@@ -18,11 +17,9 @@ const subscriptionSchema = new Schema({
     },
     start: {
         type: Date,
-        required: true,
     },
     end: {
         type: Date,
-        required: true,
     },
 },
     {
